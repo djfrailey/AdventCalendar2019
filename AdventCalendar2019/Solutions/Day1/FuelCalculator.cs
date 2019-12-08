@@ -31,10 +31,5 @@ namespace AdventCalendar2019.Solutions.Day1
 
             return sum;
         }
-
-        double CalculateRequirement(double inputMass)
-        {
-            return Math.Floor(inputMass / 3) - 2;
-        }
     }
 }
