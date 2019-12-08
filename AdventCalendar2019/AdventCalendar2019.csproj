@@ -5,4 +5,14 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="SolutionData\Day1_Solution.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="SolutionData\Day1_Solution.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
