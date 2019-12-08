@@ -9,7 +9,15 @@ namespace AdventCalendar2019.Solutions.Day1
     {
         public double Calculate(double inputMass)
         {
-            return Math.Floor(inputMass / 3) - 2;
+            double requirement = Math.Floor(inputMass / 3) - 2; ;
+
+            // Math.Floor(n / 3) - 2 where n < 6 always returns a 0 or negative fuel requirement
+            if (requirement > 6)
+            {
+                requirement += Calculate(requirement);
+            }
+
+            return requirement;
         }
 
         public double Calculate(double[] inputMasses)
@@ -22,6 +30,11 @@ namespace AdventCalendar2019.Solutions.Day1
             }
 
             return sum;
+        }
+
+        double CalculateRequirement(double inputMass)
+        {
+            return Math.Floor(inputMass / 3) - 2;
         }
     }
 }
