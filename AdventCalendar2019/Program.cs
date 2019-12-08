@@ -11,11 +11,9 @@ namespace AdventCalendar2019
     {
         static List<Type> _solutions = new List<Type>();
 
-        static List<Action> _constructors = new List<Action>();
-
         static void Main(string[] args)
         {
-            _AddSolution("Day1_Solution");
+            _AddSolution("Day1.Solution");
 
             
 

@@ -9,6 +9,7 @@ namespace AdventCalendar2019.Solutions
     {
         protected SolutionInput _si;
 
+        public Solution() { }
         public Solution(SolutionInput si)
         {
             SetSolutionInput(si);
