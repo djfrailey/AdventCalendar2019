@@ -14,8 +14,7 @@ namespace AdventCalendar2019
         static void Main(string[] args)
         {
             _AddSolution("Day1.Solution");
-
-            
+            _AddSolution("Day2.Solution");
 
             bool exit = false;
             SolutionInput solutionInput = new SolutionInput(@"SolutionData");

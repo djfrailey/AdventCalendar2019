@@ -7,10 +7,14 @@
 
   <ItemGroup>
     <None Remove="SolutionData\Day1_Solution.txt" />
+    <None Remove="SolutionData\Day2_Solution.txt" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="SolutionData\Day1_Solution.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SolutionData\Day2_Solution.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
