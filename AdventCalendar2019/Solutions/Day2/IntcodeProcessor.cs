@@ -42,11 +42,11 @@ namespace AdventCalendar2019.Solutions.Day2
         {
             int[] output = input;
             bool halt = false;
-            int offset = 0;
+            int instructionPointer = 0;
 
             while (halt == false)
             {
-                IntcodeOperation op = GetOperation(offset, output);
+                IntcodeOperation op = GetOperation(instructionPointer, output);
 
                 if (op.opcode == IntcodeOperation.HALT)
                 {
@@ -57,7 +57,7 @@ namespace AdventCalendar2019.Solutions.Day2
                     output.SetValue(result.value, result.outputIndex);
                 }
 
-                offset += 4;
+                instructionPointer += 4;
             }
 
             return output;

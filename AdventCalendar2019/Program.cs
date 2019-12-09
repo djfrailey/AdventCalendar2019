@@ -15,6 +15,7 @@ namespace AdventCalendar2019
         {
             _AddSolution("Day1.Solution");
             _AddSolution("Day2.Solution");
+            _AddSolution("Day2.Solution_Part_Two");
 
             bool exit = false;
             SolutionInput solutionInput = new SolutionInput(@"SolutionData");
